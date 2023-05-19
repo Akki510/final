@@ -1,0 +1,192 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  background: #080808;
+  color: white;
+}
+#header{  
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/Armor01_Bajaj.jpg);
+    background-size: 25%;
+    height: 100%;
+    background-position: center;
+    opacity: 0.5;
+}
+.container{
+     padding: 20px; 
+     background-color: rgba(0, 0, 0, 0.6);
+}
+
+nav{
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 200px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px; 20px;
+}
+nav ul li a{
+  color: rgb(199, 234, 224);
+  text-align: none;
+  font-size: 18px;
+  position: relative;
+  text-transform: uppercase;
+  font-family: sans-serif;
+}
+nav ul li a::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: gray;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+nav ul li a:hover::after{
+  width: 100%;
+}
+.header-text{
+        margin-top: 5%;
+        font-size: 30px;
+}
+.header-text h1{
+  font-size: 30px ;
+  margin-top: 20px; 
+}
+.header-text{
+  font-size: medium;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+#portolio{
+  padding: 100px 0;
+}
+.work{
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.work cycle-slideshow img{
+  width: 100%; 
+  transition: transform 0.2s;
+}  
+a#next{
+  color: beige;
+  margin: 50px  auto;
+  width: fit-content;
+  border: 1px solid #ff004f;
+  border-top-left-radius: 0%;
+  text-decoration: none;
+  padding: 14px 50px
+  
+}
+a#prev{
+  color: white;
+  color: beige;
+  margin: 50px  auto;
+  width: fit-content;
+  border: 1px solid #ff004f;
+  left: 0;
+  text-decoration: none;
+  padding: 14px 50px
+}
+.work-list{
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 100px;
+  margin-top: 50px;
+}
+.layer{
+  width: 100%;
+  height: 100%;
+  background-color: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+.work:hover img{
+  background: #ff004f;
+}
+*/------contact----- */ 
+.contact-left{
+  flex-basis: 35%;
+}
+  .contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+  margin-top: 30px;
+}
+.contact-left p i{
+  color: #ff004f;
+  margin-right: 15px;
+  font-size: 25px;
+}
+.contact-right form {
+  width: 100%;
+}
+form input, form textarea{
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: #262626;
+  color: #fff;
+  padding: 15px;
+  border-radius: 3px;
+  margin: 15px; 0;
+}
+.copyright{
+  width: 100%;
+  text-align: center;
+  padding: 25px 0;
+  background: #262626;
+  font-weight: 300;
+  margin-top: 20px;
+}
+*/-----------css for small screen----------- */ 
+@media only screen and (max-with: 600px){
+  #header{
+
+  } 
+  .header-text{
+    margin-top: 100%;
+    font-size: 16px;
+  }
+  .header-text h1{
+    font-size: 30px;
+}
+nav ul{
+  background: #ff004f;
+  position: fixed;
+  top: 0%;
+  right: 0%;
+  width: 200px;
+  height: 100vh;
+  padding-top: 50px;
+}
+nav ul li{
+  display: block;
+  margin: 25px; 
+  
+}
+}
+
